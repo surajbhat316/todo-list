@@ -121,7 +121,7 @@ li{
 }
 
 li:hover{
-    background-color: rgb(246, 238, 227) !important;
+    background-color: rgb(247, 238, 227) !important;
 }
 #list input:checked + label {
     text-decoration: line-through;
