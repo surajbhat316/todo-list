@@ -1,0 +1,123 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+body{
+    /* --font : 'Franklin Gothic Medium', 'Arial Narrow', 'Arial, sans-serif'; */
+    --font : monospace;
+    margin: 0px;
+    height: 150vh;
+    background-color: #ede5e5;
+}
+
+.heading-container{
+    background-color: cyan;
+    width: 70vw;
+    margin: 8vh auto;
+    text-align: center;
+    padding: 2vh;
+    border-radius: 2vw;
+    font-weight: bold;
+    font-size: 35px;
+    font-family: var(--font);
+    /* font-family: monospace; */
+    box-shadow: 0 18px 18px -4px lightblue;
+}
+
+.todo-list-container{
+    display: flex;
+    justify-content: center;
+    background-color: lightgrey;
+    width: 70vw;
+    height: auto;
+    margin: 8vh auto;
+    padding: 4vh;
+    border-radius: 2vw;
+    box-shadow: 0 18px 18px -4px lightgrey;
+}
+
+.todo-list-container *{
+    flex-grow: 0;
+    flex-basis: 2;
+}
+
+.todo-list-container .inputElement{
+    width: 90%;
+    height: 10vh;
+    font-size: 5vh;
+    padding: 2vw;
+    border-radius: 1vw;
+    font-family: var(--font);
+    margin: 0 4vw ;
+}
+
+.add-task{
+    width: 25%;
+    font-size: 1.5rem;
+    border-radius: 1vw;
+    background-color: rgb(79, 79, 197);
+    color: white;
+    font-family: var(--font);
+}
+
+.add-task:hover{
+    background-color: blueviolet;
+    cursor: pointer;
+}
+
+.tasks{
+    background-color: cyan;
+    width: 60vw;
+    max-height: 40vh;
+    margin: auto;
+    padding: 4vh;
+    font-size: 2vw;
+    font-family: var(--font);
+    border-radius: 2vw;
+    overflow-y: scroll;
+    box-shadow: 0 18px 18px -4px lightblue;
+}
+.tasks::-webkit-scrollbar{
+    display: none;
+}
+
+.tasks ul{
+    list-style: none;
+    margin: 10px;
+}
+
+input[type=checkbox] {
+    transform: scale(2);
+    margin: 0vw 1vw;
+}
+
+.remove-icon{
+    display: none;
+    font-size: 18px; 
+    position: absolute; 
+    top: 50%; 
+    transform: translateY(-50%);
+    right: 5%;;
+}
+
+li:hover .remove-icon{
+    display: block;
+}
+
+li{
+    position: relative;
+    background-color: bisque !important;
+    border-radius: 2vw;
+    margin: 1vw;
+    padding: 2vw;
+    box-shadow: 0 8px 8px -4px lightblue;
+}
+
+#list input:checked + label {
+    text-decoration: line-through;
+}
+
+p{
+    font-size: larger;
+    font-family: var(--font);
+}
+
